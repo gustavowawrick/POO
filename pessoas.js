@@ -28,3 +28,5 @@ console.log("Pessoa" + "\n" +
             "Ano de Nascimento: " + pessoa.anoNascimento + "\n" +
             "Idade: " + pessoa.calculaIdade() + "\n" +
             "Profissão: " + pessoa.profissao);
+
+console.log(Object.getPrototypeOf(pessoa));
