@@ -1,6 +1,7 @@
 class Estudante extends Pessoa {
 
     #matricula;
+    notas = [];
 
     constructor(nome, anoNascimento, matricula) {
         super(nome, anoNascimento, "Estudante");
@@ -15,12 +16,17 @@ class Estudante extends Pessoa {
         this.#matricula = valor;
     }
 
+    addNota(nota) {
+        this.notas.push(nota);
+    }
+
     saudar() {
         return super.saudar() + ", colegas!";
     }
 }
 
-const aluno1 = new Estudante("Jorge", 2001, 2000);
+const aluno1 = new Estudante("Gustavo", 2002, 2000);
+
 
 let matriculaAluno = aluno1.getMatricula();
 
