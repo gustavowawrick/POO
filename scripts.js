@@ -5,12 +5,18 @@ var pessoa = {
 };
 
 var pessoa1 = {
-    nome: "Brenda", idade: 19, saudar: function () {
-        console.log("Oii");
+    nome: "Brenda", anoNascimento: 2006, profissao: "Médica", calculaIdade: function () {
+        console.log(new Date().getFullYear() - this.anoNascimento);
     }
 };
 
+var nomeDoAmigo = "João";
+
 pessoa1.nome = "Valéria";
 
-console.log(pessoa, pessoa.saudar);
-console.log(pessoa1, pessoa.saudar);
+pessoa.saudar = function () {
+    console.log("Hello " + nomeDoAmigo + "!");
+};
+
+console.log(pessoa, pessoa.saudar());
+console.log(pessoa1, pessoa1.calculaIdade())
