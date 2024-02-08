@@ -20,9 +20,7 @@ function criaEmpregado(nome, anoDeNascimento, profissao) {
 
 const empregado1 = ("Jorge", 1990, "Professor");
 
-console.log("Nome: " + empregado1.nome + "\n" +
-            "Idade: " + empregado1.calculaIdade() + "\n" + 
-            "Profissão: " + empregado1.profissao);
 
-console.log("Salário Base: " + empregado.salarioBase + "\n" +
-    "Salário Bruto: " + empregado.calculaSalario());
+console.log("Profissao: " + empregado1.toString() + "\n" + 
+            "Salário nase: " + empregado.salarioBase + "\n" +
+            "Salário com horas extras: " + empregado.calculaSalario());
