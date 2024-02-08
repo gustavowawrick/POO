@@ -20,16 +20,15 @@ class Estudante extends Pessoa {
     }
 }
 
-const aluno1 = new Estudante("Jorge", 2001, { numero: 2000, modalidade: "Regular" });
+const aluno1 = new Estudante("Jorge", 2001, 2000);
 
 let matriculaAluno = aluno1.getMatricula();
 
-aluno1.anoNascimento = 2000;
+aluno1.setMatricula(1000);
 
 console.log("Nome: " + aluno1.nome + "\n" +
     "Ano de nascimento: " + aluno1.anoNascimento + "\n" +
     "Idade: " + aluno1.calculaIdade() + "\n" +
     "Profissão: " + aluno1.profissao + "\n" +
-    "Matrícula: " + matriculaAluno.numero + "\n" +
-    "Modalidade: " + matriculaAluno.modalidade + "\n" +
+    "Matrícula: " + matriculaAluno + "\n" +
     aluno1.saudar());
