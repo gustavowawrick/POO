@@ -1,4 +1,4 @@
-var json = '{ "name":"Gustavo Nunes", "birth":"2002-03-14T12:00:00.000Z", "city":"Canoas"}';
+var json = '{ "name":"Gustavo Nunes", "birth":"2002-03-14T11:00:00.000Z", "city":"Canoas"}';
 
 var obj = JSON.parse(json, function (key, value) {
     if (key == "birth") {
